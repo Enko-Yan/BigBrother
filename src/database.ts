@@ -70,14 +70,14 @@ export class DatabaseManager {
         }
     }
 
-    async updateEmployeeRole(role_id: number) {
-        const newEmployeeRole = `UPDATE employee SET role_id = $1 WHERE id = $2;`;
-        try {
-            await pool.query(newEmployeeRole, [role_id]);
-            console.log(`Employee ${role_id} role updated successfully`);
-        } catch (err) {
-            console.error("Error updating employee role", err);
-        }
-    }
+    //async updateEmployeeRole(role_id: number) {
+        //const newEmployeeRole = `UPDATE employee SET role_id = $1 WHERE id = $2;`;
+        //try {
+            //await pool.query(newEmployeeRole, [role_id]);
+            //console.log(`Employee ${role_id} role updated successfully`);
+        //} catch (err) {
+            //console.error("Error updating employee role", err);
+        //}
+    //}
 
 }
